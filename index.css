@@ -1,8 +1,100 @@
-h1{
-    color: azure;
-    height: autogit;
+/* Style général */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: linear-gradient(to bottom right, #004080, #00aaff); /* Dégradé du bleu foncé au bleu clair */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
 }
-h6{
-    color: navajowhite;
-    
+
+/* En-tête avec logo */
+header {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 20px;
+}
+
+.logo-container {
+  animation: bounce 2s infinite; /* Animation du logo */
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-20px);
+  }
+  60% {
+      transform: translateY(-10px);
+  }
+}
+
+.logo {
+  width: 150px; /* Ajustez la taille selon vos besoins */
+}
+
+/* Titre principal */
+h1 {
+  font-size: 2.5em;
+  margin: 80px 0;
+  font-weight: 600;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Conteneur des rôles */
+.roles-container {
+  margin: 30px auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* Grille des rôles */
+.roles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Style des rôles */
+.role {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer; /* Changer le curseur pour indiquer que c'est cliquable */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.role:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.role img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+}
+
+/* Pied de page */
+footer {
+  margin-top: 50px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 15px 0;
+  font-size: 0.9em;
+  width: 100%;
+  text-align: center;
 }

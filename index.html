@@ -1,13 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OppoMaroc</title>
+    <title>Segmentation Utilisateur - OppoMaroc</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>OppoMaroc : </h1>
-    <h2>Marche</h2>
-    <h6> October</h6>
+    <header>
+        <div class="logo-container">
+            <img src="./logo.jpeg" alt="Logo OppoMaroc" class="logo">
+        </div>
+    </header>
+
+    <main class="roles-container">
+        <h1>Choisissez votre rôle</h1>
+        <div class="roles">
+            <div class="role" onclick="redirectTo('entrepreneur')">
+                <img src="./im1.jpeg" alt="Entrepreneur">
+            </div>
+            <div class="role" onclick="redirectTo('acheteur')">
+                <img src="./achet.jpeg" alt="Acheteur Public">
+            </div>
+            <div class="role" onclick="redirectTo('representant')">
+                <img src="./represtant.jpeg"alt="Représentant de l'État">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 OppoMaroc. Tous droits réservés.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
