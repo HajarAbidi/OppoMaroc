@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soumission à un Appel d'Offre</title>
+    <link rel="stylesheet" href="./Soumission.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./logggg.png" alt="Logo OPPOMAROC">
+        </div>
+        <div class="nav-links">
+            <a href="./bienvenue.html">Accueil</a>
+            <a href="./seg.html">Services</a>
+            <a href="./seg.html">Segmentation</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="soumission-container">
+        <h1>Soumission à l'Appel d'Offre</h1>
+        <form id="soumission-form">
+            <div class="form-group">
+                <label for="nom">Nom de l'Entreprise</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telephone">Téléphone</label>
+                <input type="tel" id="telephone" name="telephone" required>
+            </div>
+            <div class="form-group">
+                <label for="adresse">Adresse</label>
+                <input type="text" id="adresse" name="adresse" required>
+            </div>
+            <div class="form-group">
+                <label for="devis">Devis (PDF)</label>
+                <input type="file" id="devis" name="devis" accept="application/pdf" required>
+            </div>
+            <div class="form-group">
+                <label for="plan">Plan Architectural (PDF)</label>
+                <input type="file" id="plan" name="plan" accept="application/pdf" required>
+            </div>
+            <div class="form-group">
+                <label for="certificat">Certificat de Qualification (PDF)</label>
+                <input type="file" id="certificat" name="certificat" accept="application/pdf" required>
+            </div>
+            <div class="form-group">
+                <label for="conformite">Attestation de Conformité (PDF)</label>
+                <input type="file" id="conformite" name="conformite" accept="application/pdf" required>
+            </div>
+            <div class="form-group">
+                <label for="commentaires">Commentaires</label>
+                <textarea id="commentaires" name="commentaires" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn">Soumettre</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Portail Marocain des Marchés Publics. Tous droits réservés. <a href="#">Politique de confidentialité</a></p>
+    </footer>
+</body>
+</html>

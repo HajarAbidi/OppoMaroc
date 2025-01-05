@@ -1,0 +1,129 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff9800;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+nav .nav-links {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav a {
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #333;
+}
+
+/* Détails du Marché */
+.marche-details {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.marche-details h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #0056b3;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.detail-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.detail-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #0056b3;
+}
+
+.detail-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.detail-item ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.detail-item ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #ff9800;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
