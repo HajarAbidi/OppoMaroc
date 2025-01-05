@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration - Lancer un Marché</title>
+    <link rel="stylesheet" href="./admin.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./logggg.png" alt="Logo OPPOMAROC">
+        </div>
+        <div class="nav-links">
+            <a href="#">Accueil</a>
+            <a href="#services">Services</a>
+            <a href="#segmentation">Segmentation</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="admin-container">
+        <h1>Lancer un Nouveau Marché</h1>
+        <form id="admin-form">
+            <div class="form-group">
+                <label for="nom-marche">Nom du Marché</label>
+                <input type="text" id="nom-marche" name="nom-marche" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description du Marché</label>
+                <textarea id="description" name="description" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="date-publication">Date de Publication</label>
+                <input type="date" id="date-publication" name="date-publication" required>
+            </div>
+            <div class="form-group">
+                <label for="date-limite">Date Limite de Soumission</label>
+                <input type="date" id="date-limite" name="date-limite" required>
+            </div>
+            <div class="form-group">
+                <label for="budget">Budget Estimé (MAD)</label>
+                <input type="number" id="budget" name="budget" required>
+            </div>
+            <div class="form-group">
+                <label for="documents">Documents à Fournir</label>
+                <input type="file" id="documents" name="documents" multiple required>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact</label>
+                <input type="text" id="contact" name="contact" required>
+            </div>
+            <button type="submit" class="btn">Lancer le Marché</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Portail Marocain des Marchés Publics. Tous droits réservés. <a href="#">Politique de confidentialité</a></p>
+    </footer>
+</body>
+</html>
