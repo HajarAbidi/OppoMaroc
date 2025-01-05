@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
@@ -17,92 +17,77 @@ a {
     color: inherit;
 }
 
-/* En-tête */
-header {
-    background-color: #0056b3;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-header .logo {
-    width: 150px;
-    margin-bottom: 10px;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-}
-
 /* Barre de navigation */
 nav {
-    background-color: #ff9800; /* Orange */
-    padding: 10px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff9800;
+    padding: 10px 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
-    list-style: none;
+nav .logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+nav .nav-links {
     display: flex;
     justify-content: center;
+    flex-grow: 1;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
+nav a {
     color: #fff;
     font-size: 1.1rem;
+    margin: 0 15px;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+nav a:hover {
     color: #333;
 }
 
-/* Section Connexion */
-.connexion {
-    background-color: #fff;
-    padding: 50px 20px;
+/* Section de connexion */
+.login-container {
     max-width: 400px;
     margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-.connexion h2 {
+.login-container h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #0056b3;
 }
 
-.connexion .form-group {
+.form-group {
     margin-bottom: 20px;
     text-align: left;
 }
 
-.connexion .form-group label {
+.form-group label {
     display: block;
     margin-bottom: 5px;
     font-weight: 500;
-    color: #555;
 }
 
-.connexion .form-group input {
+.form-group input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 1rem;
 }
 
-.connexion .btn {
+.btn {
     background-color: #ff9800;
     color: #fff;
     padding: 12px 25px;
@@ -110,33 +95,34 @@ nav ul li a:hover {
     border: none;
     border-radius: 25px;
     cursor: pointer;
+    font-weight: 600;
     transition: background-color 0.3s ease;
 }
 
-.connexion .btn:hover {
+.btn:hover {
     background-color: #e68900;
 }
 
-.connexion .register-link {
-    margin-top: 15px;
+.login-container p {
+    margin-top: 20px;
     font-size: 0.9rem;
 }
 
-.connexion .register-link a {
-    color: #0056b3;
+.login-container a {
+    color: #ff9800;
     font-weight: 500;
 }
 
-.connexion .register-link a:hover {
+.login-container a:hover {
     text-decoration: underline;
 }
 
-/* Pied de page */
+/* Footer */
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
     margin-top: 50px;
 }
 
